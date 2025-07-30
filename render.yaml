@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: mediatel-sms-bot
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python sms_to_telegram.py"
